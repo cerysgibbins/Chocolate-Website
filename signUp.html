@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Siocled</title>
+    <link rel="stylesheet" href="styles.css" />
+	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="javascript.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+	
+        <header id="pageHead">
+            <div class="headerBar"></div>
+            <div id="headerMainContent" class="pageContentWrapper">
+               <a href="index.html" id="logo"></a>
+                <div id="utilities" class="headerContent">
+                    <ul id="navUtilities" class="menuList horizontalMenuList">                   
+                        <li><a href="signIn.html"><span class="search-sign"></span><span>Sign In</span></a></li>
+                    </ul>
+					
+                </div>
+                <nav id="mainMenu" class="headerContent">
+                    <div id="navHamburger">
+
+                        <a href="navMainMenu">
+                    		<span></span>
+							<span></span>
+							<span></span>
+                        </a>
+                    </div>
+                    <ul id="navMainMenu" class="menuList horizontalMenuList">
+                        <li><a href="index.html" id="WelcomeLink">Welcome</a></li>
+                        <li><a href="products.html" id="ProductsLink">Products</a></li>
+                        <li><a href="gifts.html" id="GiftsLink">Gifts</a></li>
+                        <li><a href="delivery.html" id="DeliveryLink">Delivery</a></li>
+                        <li><a href="gallery.html" id="GalleryLink">Gallery</a></li>
+                        <li><a href="contact.html" id="ContactLink">Contact</a></li>
+                    </ul>
+                </nav>
+				
+				<div id="pagemaincontent">
+					<div class="leftColumn contactForm">
+				<h2>Sign Up</h2>
+					<p>Please enter in your details below to successfully Sign Up to our site..</p>
+							
+					
+					<form id="getInTouchForm" method="get" action="SignUpSubmission.html">
+			
+						<div>
+							<label for="contactFirstName">Name:</label>
+							<input class="autoSize" type="text" name="contactFirstName" id="contactFirstName" placeholder="First Name" required/>
+							<input class="autoSize" type="text" name="contactSurname" id="contactSurname" placeholder="Surname" required />
+						</div>
+						
+						<div>
+							<label for="contactEmail">Email:</label>
+							<input type="email" name="contactEmail" id="contactEmail" placeholder="Your email address" required />
+						</div>
+						
+						<div>
+							<label for="contactMessage">Password:</label>
+							<input type="textarea" name="contactMessage" id="contactMessage" placeholder="Your Password" required />
+						</div>
+						
+						<div>
+							<input class="autoSize" type="checkbox" name="contactCopyMe" id="contactCopyMe" required />I agree to the conditions.
+							<label class="autoSize" for="contactCopyMe"></label>
+						</div>
+					
+						<div>
+							<label for="submitButton"></label>
+							<input class="autoSize" type="submit" value="Sign Up" />
+						</div>
+				
+				
+					</form>
+				</div>
+					
+				</div>
+				
+            </div>
+        </header>
+        
+       
+        <footer id="pageFooter">
+			<p>&copy; Cerys Gibbins - 2015 </p>
+        </footer>
+    </div>
+
+
+	
+</body>
+</html>

@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Siocled</title>
+		<link href="styles.css" rel="stylesheet" />
+	</head>
+<body>
+    	 <div id="wrapper">
+	
+        <header id="pageHead">
+            <div class="headerBar"></div>
+            <div id="headerMainContent" class="pageContentWrapper">
+                <a href="index.html" id="logo"></a>
+                <div id="utilities" class="headerContent">
+                    <ul id="navUtilities" class="menuList horizontalMenuList">                   
+                        <li><a href="signin.html"><span class="search-sign"></span><span>Sign In</span></a></li>
+                    </ul>
+					<div id="logo"></div>
+					
+                </div>
+                <nav id="mainMenu" class="headerContent">
+                    <div id="navHamburger">
+
+                        <a href="navMainMenu">
+                    		<span></span>
+							<span></span>
+							<span></span>
+                        </a>
+                    </div>
+                    <a href="navMainMenu" class="menuList horizontalMenuList">
+                        <li><a href="index.html" id="WelcomeLink">Welcome</a></li>
+                        <li><a href="products.html" id="ProductsLink">Products</a></li>
+                        <li><a href="gifts.html" id="GiftsLink">Gifts</a></li>
+                        <li><a href="delivery.html" id="DeliveryLink">Delivery</a></li>
+                        <li><a href="gallery.html" id="GalleryLink">Gallery</a></li>
+                        <li><a href="contact.html" id="ContactLink">Contact</a></li>
+                    </ul>
+                </nav>
+       
+        <div id="pagecontent">
+            <!-- insert page content here -->
+            <h4>Thank you for contacting me.</h4>
+            <p>I will respond to your query as soon as possible.</p><br />
+            <p><strong>The URL of this page is:</strong><br />(It includes the name/value pairs of the completed fields of your submitted form data after the "?".)</p>
+            <p>
+                <script type="text/javascript">
+                    document.write(decodeURIComponent(document.location.href));
+                </script>
+            </p>
+            <br />
+            <p><strong>Here are the fields that you submitted:</strong></p>
+            <p>
+                <script type="text/javascript">
+                    document.write(decodeURIComponent(document.location.search.substring(1).replace(new RegExp("&", "g"),
+					"<br/>")).replace(new RegExp("\\+", "g"), " "));
+                </script>
+            </p>
+        </div>
+       <footer id="pageFooter">
+			<p>&copy; Cerys Gibbins - 2015 </p>
+        </footer>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,614 @@
+html, body {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    font-size: 100%;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+}
+
+#wrapper {
+	width: 100%;
+	min-width: 320px; /*smart phone*/
+	font-size: 0.85em;
+}
+
+#logo {
+	position: absolute;
+	background: url(images/siocled-logo.png) no-repeat transparent;
+	background-size: 100%;
+	width:45%;
+	height: 258px;
+	top: 10px;
+	left: 350px;
+}
+
+
+#homeImage {
+	background: url(images/homeImage.jpg) no-repeat;
+	background-position: center;
+	height: 328px;
+}
+
+#pageHeader {
+    position: relative;
+}
+
+.headerBar {
+    background-color: #870000;
+    height: 10px;
+}
+
+.pageContentWrapper, .pageContentSection > div {
+    max-width: 85em; /*1360px*/
+    margin: 0 auto;
+}
+
+.headerContent {
+    padding: 5px 0px;
+}
+
+#headerMainContent {
+    overflow: auto;
+    position: relative;
+}
+
+#utilities {
+	overflow: auto;
+}
+
+#navUtilities {
+	float: right;
+}
+
+#mainMenu {
+	padding-top: 180px;
+}
+
+#mainMenu a {
+    display: inline-block;
+	text-indent: -9999px;
+}
+
+#mainMenu li {
+	float: left;
+	list-style: none;
+	padding: 0px 45px;
+}
+
+#navMainMenu {
+	overflow: auto;
+}
+
+
+#WelcomeLink {
+	/* -- an image of the font that displays the 'Welcome' link --*/
+	background: url(images/welcome-icon.png) no-repeat;
+	width: 100px;
+	height: 100px;
+}
+
+#WelcomeLink:hover {
+	/* -- an image of the font that displays the 'Welcome' link --*/
+	background: url(images/welcome-icon-hover.png) no-repeat;
+	width: 100px;
+	height: 100px;
+}
+
+#ProductsLink {
+	/* -- an image of the font that displays the 'Welcome' link --*/
+	background: url(images/products-icon.png) no-repeat;
+	width: 100px;
+	height: 100px;
+}
+
+#ProductsLink:hover {
+	/* -- an image of the font that displays the 'Welcome' link --*/
+	background: url(images/products-icon-hover.png) no-repeat;
+	width: 100px;
+	height: 100px;
+}
+
+#GiftsLink {
+	/* -- an image of the font that displays the 'Welcome' link --*/
+	background: url(images/gifts-icon.png) no-repeat;
+	width: 100px;
+	height: 100px;
+}
+
+#GiftsLink:hover {
+	/* -- an image of the font that displays the 'Welcome' link --*/
+	background: url(images/gifts-icon-hover.png) no-repeat;
+	width: 100px;
+	height: 100px;
+}
+
+#DeliveryLink {
+	/* -- an image of the font that displays the 'Welcome' link --*/
+	background: url(images/Delivery-icon.png) no-repeat;
+	width: 100px;
+	height: 100px;
+}
+
+#DeliveryLink:hover {
+	/* -- an image of the font that displays the 'Welcome' link --*/
+	background: url(images/Delivery-icon-hover.png) no-repeat;
+	width: 100px;
+	height: 100px;
+}
+#GalleryLink {
+	/* -- an image of the font that displays the 'Welcome' link --*/
+	background: url(images/photos-icon.png) no-repeat;
+	width: 100px;
+	height: 100px;
+}
+
+#GalleryLink:hover {
+	/* -- an image of the font that displays the 'Welcome' link --*/
+	background: url(images/photos-icon-hover.png) no-repeat;
+	width: 100px;
+	height: 100px;
+}
+
+
+#ContactLink {
+	/* -- an image of the font that displays the 'Welcome' link --*/
+	background: url(images/contact-icon.png) no-repeat;
+	width: 100px;
+	height: 100px;
+}
+
+#ContactLink:hover {
+	/* -- an image of the font that displays the 'Welcome' link --*/
+	background: url(images/contact-icon-hover.png) no-repeat;
+	width: 100px;
+	height: 100px;
+}
+
+.menuList {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menuList a {
+	text-decoration: none;
+}
+
+.horizontalMenuList > li {
+	display: inline-block;
+	padding-top: 20px;
+	padding-left: 100px;
+	padding-right: 10px;
+}
+
+#pagemaincontent {
+	min-height: 70px;
+	padding-top: 20px;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+#pageFooter {
+	min-height: 50px;
+	text-align: center;
+}
+
+/* START Products */
+/* START Gifts */
+#gallery {
+	width: 100%;
+	height: 720px; 
+	margin: 0px auto;
+	position: relative;
+}
+
+#gallery > a {
+	float: left;
+	width: 20%;
+	height: 20%;
+	position: relative;
+	margin: 0.5%;
+	
+	border:1px solid #ffffff;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; /* Firefox version */
+	
+	text-decoration: none;
+	text-align: center;
+}
+
+#gallery > a > img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	opacity: 0.3; /* Will make it semi-transparent */
+	cursor: pointer;
+}
+
+#gallery > a:focus > img {
+	width: 150%; 
+	height: 150%;
+	
+	opacity: 1;
+	z-index: 1;
+	cursor: default;
+	
+	border: none 0px; /* remove white border */
+	border-radius: 10px; /* give image rounded corners*/
+}
+
+#gallery > a:focus {
+	outline: none 0px;
+}
+
+
+#gallery > a:nth-child(4n + 3) > img, #gallery a:nth-child(4n + 4) > img {
+	right: 0px;
+}
+
+#gallery > a:nth-child(n + 9) > img {
+	bottom: 0px;
+}
+
+#gallery > a > span {
+	display: none; /* hidden until image enlarged*/
+	text-decoration: none; /* removes underline */
+	/* adds a semi-transparent gradient */
+	background: linear-gradient(rgba(109, 188, 219, 0.5), rgba(255, 255, 255, 0.5));
+} 
+
+#gallery > a:focus > span {
+	display: inline-block; /* shows caption when enlarged */
+	z-index: 2; /* brings to the front */
+	position: absolute;
+	width: 150%;
+	height: 20%;
+	top: 150%;
+	/* adds rounded corners but only to bottom */
+	border-radius: 0px 0px 10px 10px;
+}
+
+
+#gallery > a:nth-child(4n +1) > span, #gallery a:nth-child(4n + 2) > span {
+	left: 0%;
+}
+
+
+#gallery > a:nth-child(4n +3) > span, #gallery a:nth-child(4n + 4)> span {
+	right: 0%;
+}
+
+
+#gallery > a:nth-child(n +9) > span{
+	top: 80%;
+	bottom: 0%;
+}
+
+
+
+/* END Products */
+/* END Gifts */ 
+
+/* START Delivery */
+
+#deliveryPrices {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#deliveryPrices td, #deliveryPrices th {
+    font-size: 1em;
+    border: 1px solid #F7C39F;
+    padding: 3px 7px 2px 7px;
+}
+
+#deliveryPrices th {
+    font-size: 1.1em;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: #870000;
+    color: #ffffff;
+}
+
+#deliveryPrices tr.alt td {
+    color: #000000;
+    background-color: #F7CFAA;
+}
+
+/* END Delivery */ 
+
+/* START Photo's */
+
+#sliderFrame, #sliderFrame div {
+    box-sizing: content-box;
+}
+
+/*slider frame*/
+#sliderFrame 
+{
+    width:720px;
+    margin:0 auto;
+    padding:20px;
+    background:#191919;
+    border:1px solid #066;
+    border-radius:6px;
+} 
+
+#slider, #slider div.sliderInner {
+    width:700px;height:306px;/* Must be the same size as the slider images */
+}
+
+#slider {
+	background:black url(loading.gif) no-repeat 50% 50%;
+	position:relative;
+	margin:0 auto; /*center-aligned*/
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+/* the link style */
+#slider a.imgLink, #slider .video {
+	z-index:2;
+	position:absolute;
+	top:0px;left:0px;border:0;padding:0;margin:0;
+	width:100%;height:100%;
+}
+
+
+/* Caption styles */
+#slider div.mc-caption-bg, #slider div.mc-caption-bg2 {
+	position:absolute;
+	width:400px;
+	height:auto;
+	padding:10px 0;
+	left: 100px; 
+	bottom: -40px;
+	z-index:3;
+	overflow:hidden;
+	font-size:0;
+	list-style: none;
+}
+#slider div.mc-caption-bg {
+    
+	background:transparent;
+}
+#slider div.mc-caption-bg2 {
+    background:none;
+}
+#slider div.mc-caption {
+	font:bold 13px/16px Arial;
+	color:#ccc;
+	z-index:4;
+	text-align:center;
+    background:none;
+}
+
+#slider img, #slider>b, #slider a>b {
+	position:absolute; border:none; display:none;
+}
+
+#slider div.sliderInner {
+	overflow:hidden; 
+	-webkit-transform: rotate(0.000001deg);
+	-moz-transform: rotate(0.000001deg);
+	-ms-transform: rotate(0.000001deg);
+	position:absolute; top:0; left:0;
+}
+
+#slider>a, #slider video, #slider audio {
+	display:none;
+}
+
+
+/* -- thumbnails -- */
+#thumbs 
+{
+    margin-top:50px;
+    text-align:center;
+    font-size:0;
+}
+#thumbs .thumb 
+{
+    display:inline-block;
+    display:inline;
+    margin:0 1px;/*this determins the distance between each thumbnail*/
+    border:1px solid #333;
+    padding:4px;
+    background:black;
+}
+
+#thumbs .thumb img{border:1px solid #555; cursor:pointer; width:70px; height:44px; opacity:0.5;;}
+#thumbs .thumb-on img{border:1px solid #999; opacity:1;;}
+#slider div {-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}
+#slider div {-moz-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}
+#slider div {-ms-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}
+
+/* END Photo's */ 
+
+/* START Contact */ 
+
+div.contactForm + footer {
+	padding: 10px 0px;
+	clear: both;
+}
+
+.contactForm label {
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	padding-right: 5px;
+	vertical-align: top;
+}
+
+.contactForm input, .contactForm textarea, .contactForm select {
+	width: 315px;
+	margin-left: 5px;
+}
+
+#getInTouchForm > div, #jobForm > div {
+	margin: 5px 0px;
+}
+
+.contactForm .autoSize {
+	width: auto;
+}
+
+#contactCopyMe {
+	margin-left: 112px;
+}
+
+/* END Contact */ 
+
+
+/* TABLET */
+	@media screen and (max-width: 768px)  /* 768px*/
+	{
+		#mainMenu {
+		width: 100%;	
+		}
+	
+		#navMainMenu {
+		display: none;
+		width: 100%;
+		position: relative;			
+		}
+		
+		#navMainMenu > li {
+		display: block;
+		padding: 50px ;
+		}
+		
+		#navHamburger {
+		position: relative;
+		display: inline-block;
+		width: 32px;
+		height: 32px;
+		padding-left:85%;
+		}
+	
+		#navHamburger > a {
+		display: inline-block;
+		}
+		
+		#navHamburger span {
+		background-color: #870000;
+		width: 30px;
+		height: 4px;
+		margin-top: 3px;
+		margin-bottom: 3px;
+		display: block; 
+		}
+	
+		#navHamburger.expand {
+			background-color: #FFF;
+			font-weight: bold;
+			color: #1E1E1E;
+		}
+
+		#navHamburger.expand:before {
+			content: "X";
+			cursor: pointer;	
+		}
+		
+		#navHamburger.expand span {
+			display: none;	
+		}
+		
+		#navMainMenu.expand {
+			display: inline-block;	
+		}
+	
+		#logo {
+			position: absolute;
+			background: url(images/siocled-logo.png) no-repeat transparent;
+			background-size: 100%;
+			width:500px;
+			height: 258px;
+			top: 10px;
+			left: 110px;
+		}
+		
+		#sliderFrame 
+		{
+			width:720px;
+			margin:0 auto;
+			padding:20px;
+			background:#191919;
+			border:1px solid #066;
+			border-radius:6px;
+		} 
+		
+		
+	}
+
+	/* MOBILE */
+	@media screen and (max-width: 360px) 
+	{
+		#mainMenu {
+			width: 94%;
+			padding-top: 70px;
+		}
+		
+		#navMainMenu li {
+			display: block;
+			padding: 20px;
+		}
+		
+		#logo {
+			position: absolute;
+			background: url(images/logo2.png) no-repeat transparent;
+			width:240px;
+			height: 123px;
+			left: 10px;
+		}
+		
+		#homeImage {
+			background: url(images/homeImageMobile.jpg) no-repeat;
+			background-position: center;
+			height: 123px;
+			
+		}
+		
+		#utilities {
+			overflow: auto;
+			z-index:3;
+		}
+
+		#navUtilities {
+			float: right;
+			padding-right: 30px;
+		}
+		
+		#sliderFrame 
+		{
+			width:220px;
+			margin:0 auto; /*center-aligned*/
+			padding:20px;
+			background:#191919;
+			border:1px solid #066;
+			border-radius:6px;
+		} 
+
+		#slider, #slider div.sliderInner {
+			width:200px;height:96px;/* Must be the same size as the slider images */
+		}
+		
+		#gallery {
+			width: 100%;
+			height: 300px; 
+			margin: 0px auto;
+			position: relative;
+		}
+
+	}
+
+
+
+
+
+
+
